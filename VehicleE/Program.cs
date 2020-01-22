@@ -10,9 +10,17 @@ namespace VehicleE
     {
         static void Main(string[] args)
         {
-            Car car = new Car("Mark1","Number1",2,"true",54);
-            Console.WriteLine(car);
-            Console.ReadKey();
+            bool check = true;
+            while (check)
+            {         
+                    Car car = new Car("Mark1", "Number1", 0, "true", 0);
+                    Console.WriteLine(car);
+                    check = false;
+                        Console.ReadKey();
+                
+
+               
+            }
             
             
         }
@@ -21,6 +29,8 @@ namespace VehicleE
     {
         public override string ToString()
         {
+
+
             return $"марка = {Mark = Convert.ToString(Console.ReadLine())},номер = {Number = Convert.ToString(Console.ReadLine())},скорость = {Speed = Convert.ToInt32(Console.ReadLine())}, коляска = {Pram = Convert.ToString(Console.ReadLine())}, вес = {Weight = Convert.ToDouble(Console.ReadLine())}";
         }
         public string Mark { get; set; }
