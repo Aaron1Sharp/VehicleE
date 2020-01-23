@@ -24,7 +24,7 @@ namespace VehicleE
                 Console.WriteLine(truck.SpeedTransport() + "Км/ч");
 
                 Console.WriteLine("Введите какой привод у грузовика");
-                truck.Pram = Console.ReadLine();
+                truck.Drive = Console.ReadLine();
 
                 Console.WriteLine("Введите Вес грузовика(Вводить только число)");
                 Console.WriteLine(truck.WeightTransport() + "Тонн");

@@ -9,8 +9,7 @@ namespace VehicleE
     {
         static void Main(string[] args)
         {
-            ShowProgram.StartActionVehicle();
-            Console.WriteLine();
+            Transport.StartActionVehicle();
             Console.ReadKey();
         }
     }

@@ -24,7 +24,7 @@ namespace VehicleE
                 Console.WriteLine(moto.SpeedTransport() + "Км/ч");
 
                 Console.WriteLine("Введите какой привод у мотоцикла");
-                moto.Pram = Console.ReadLine();
+                moto.Drive = Console.ReadLine();
 
                 Console.WriteLine("Введите Вес мотоцикла(Вводить только число)");
                 Console.WriteLine(moto.WeightTransport() + "Тонн");
