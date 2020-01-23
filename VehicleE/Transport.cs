@@ -122,7 +122,7 @@ namespace VehicleE
                  {
                     Console.WriteLine("Введите слово для поиска");
                     string search = Console.ReadLine();
-                    Console.WriteLine($"\nFind: Part where name contains -{search}-:\n-------------"+transports.Find(transport => transport.Mark.Contains(search))) ;
+                    Console.WriteLine($"\nпоиск по слову -{search}-: среди марок найдено:\n-------------"+transports.Find(transport => transport.Mark.Contains(search))+transports.Find(transport => transport.Number.Contains(search))+transports.Find(transport => transport.Drive.Contains(search)));
 
                  }
             }
